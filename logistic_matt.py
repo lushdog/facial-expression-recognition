@@ -9,7 +9,7 @@ class LogisticModel(object):
     def __init__(self):
         pass
 
-    def fit(self, X, Y, learning_rate=10e-7, reg=0,
+    def fit(self, X, Y, learning_rate=10e-2, reg=10e-15,
             epochs=120000, show_fig=False):
         X, Y = shuffle(X, Y)
         Xvalid, Yvalid = X[-1000:], Y[-1000:]
